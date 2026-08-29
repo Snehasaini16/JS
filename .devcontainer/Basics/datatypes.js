@@ -53,9 +53,49 @@ let num1,num2,num3
 num1=num2=num3=2+2
 
 // PREFIX AND POSTFIX
-let i = 0;    // i = 0
-let j = ++i;  // i = 1, j = 1
-let k = --i;  // i = 0, k = 0
-let i = 0;    // i = 0
-let j = i++;  // i = 1, j = 0
-let k = i--;  // i = 0, k = 1
+// let i = 0;    // i = 0
+// let j = ++i;  // i = 1, j = 1
+// let k = --i;  // i = 0, k = 0
+// let i = 0;    // i = 0
+// let j = i++;  // i = 1, j = 0           
+// let k = i--;  // i = 0, k = 1
+
+// ***TYPES OF DATATYPES*** done on the basis of how the data is stored in memory and is accessed
+// PRIMITIVE--> 7 categories -->call by value(the copy is given)
+// String,boolean,NULL,Number,undefined,symbol(to make an val unique),Bigint
+
+const id = Symbol('123')
+const newId = Symbol('123')
+// console.log(id===newId);
+
+const bigNum = 846456059856984n //n makes it bigINT
+
+// NOM PRIMITIVE OR REFERENCE TYPE --->pass by reference
+// arrays,objects, functions
+const heroes = ["spidey","IronMan","shakal"]
+{
+    name:"sneha"
+    age:22
+}
+//or
+let myObj={
+    name:"sneha",
+    age:22,
+}
+
+const myFn = function(){
+    console.log("Hello World");
+    
+}
+
+const outsideTemp = null
+// console.log(typeof outsideTemp) --->object
+/*
+undefined->undefined
+Null->object
+bool->bool
+number=number
+string->string
+non-primitive type->object
+ */
+
