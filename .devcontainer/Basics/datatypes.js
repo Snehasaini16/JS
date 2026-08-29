@@ -99,3 +99,23 @@ string->string
 non-primitive type->object
  */
 
+// *******************************************************
+// stack(primitive)->copy of val,heap memory(non primitive)->reference pf val
+
+let myName = "sneha"
+let anotherName = myName
+anotherName = "bharti"
+
+console.log(myName)
+console.log(anotherName)
+
+let userOne = {
+    email:"abc",
+    upi:"123"
+}
+
+let userTwo = userOne
+userTwo.email = "abc@google.com"
+console.log(userOne.email)
+console.log(userTwo.email)
+
