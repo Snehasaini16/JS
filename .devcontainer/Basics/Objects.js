@@ -87,4 +87,33 @@ const users = [
 
 // ******THIRD LECTURE**********
 // DESTRUCTURING
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+const {price:p} = course
+// console.log(price)
+// console.log(p); =>same op =>destructuring
+
+// const navbar = ({}) => { =>REACT
+
+// }
+
+// navbar(company = "hitesh")
+
+// { =>JSON STRUCTURE KEY-VAL both strings
+//     "name": "sneha",
+//     "coursename": "JS",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+
 
