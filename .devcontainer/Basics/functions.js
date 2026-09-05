@@ -37,3 +37,42 @@ function userLoginMsg(username){
 enter a val default one gets printed
 fn userloginMsg(username="sam")
 */
+
+function calculatePrice(...num1){
+    return num1
+}
+
+//console.log(calculatePrice(200,300,500))
+//when i pass multiple vals w/o ... it'll print the 1 val
+// ... makes all values into an array
+// ... is either rest or spread depending on its use case
+/*fn calculatePrice(val1,val2,...num1)
+=> in this first 2 val's will go to val 1 nd val 2
+rest will be in the array
+ */
+
+const user = {
+    name: "sneha",
+    price: 200
+
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.name} and price is ${anyObject.price}`)
+}
+
+//handleObject(user)
+
+// handleObject({name:"sam",
+//     price:299
+// })
+
+const arr = [200,400,500,100]
+
+function secondVal(getArray){
+    return getArray[2]
+}
+
+// console.log(secondVal(arr))
+
+
