@@ -32,11 +32,22 @@ Steps:
 2. Memory phase- memory allocated
 (val1,val2,res1,res2->undefined,add->definition)
 3. Execution phase-val is assigned
-(val1=10,val2=5,add->new execution context{new var env+execution thread})
-4. 
+(val1=10,val2=5,add->new execution context{A. new var env+execution thread},res=15)
+A. memory phase{val1,val2,total-undefined}
+B. execution context{num1-10,num2-7,total-17}
+total is returned to global execution context
+now whole A,B is deleted
+
+repeat same for res2
+new var wnv + thread
+A. memory phase{val1,val2,total-undefined}
+B. execution context{num1-10,num2-3,total-13}
+total is returned to global execution context
+now whole A,B is deleted
 
 ******CALL STACK******
 how fns are executing,loaded into the memory
+follows LIFO
 
 
 */
