@@ -40,6 +40,8 @@
 //     console.log(key)
 // }
 
+//MAPS CANT BE ITERATED USING FOR IN LOOP
+
 // for (const [key,value] of map) {
 //     console.log(key, ':-', value)
 // }
